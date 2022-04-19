@@ -3,7 +3,7 @@
 
 * Challenge 1
   *   Instructions
-  *   Solution (SAQL code maintained in private repository)
+  *   [Solution (SAQL code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Code/blob/main/Challenge_1)
 * Challenge 2
   *   Instructions
   *   Solution (SAQL code maintained in private repository)

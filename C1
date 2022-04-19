@@ -1,0 +1,16 @@
+q = load "Beattie_Subs";
+
+cancel = group q by ('Churn_Date_Year', 'Churn_Date_Quarter');
+cancel = foreach cancel generate cancel.'Churn_Date_Year' + "~~~" + cancel.'Churn_Date_Quarter' as 'ActivityDate_Year~~~ActivityDate_Quarter', count() as 'New Quarter Cancellations';
+
+cancel = group cancel by ('ActivityDate_Year~~~ActivityDate_Quarter');
+cancel = foreach cancel generate cancel.'ActivityDate_Year~~~ActivityDate_Quarter' as 'ActivityDate_Year~~~ActivityDate_Quarter', coalesce(sum(cancel.'New Quarter Cancellations'),0) as 'New Quarter Cancellations', coalesce(sum(sum('New Quarter Cancellations')) over ([-1 .. -1] partition by all order by ('ActivityDate_Year~~~ActivityDate_Quarter')),0) as 'Previous Quarter Cancellations';
+
+sub = group q by ('Subscription_Date_Year', 'Subscription_Date_Quarter');
+sub = foreach sub generate sub.'Subscription_Date_Year' + "~~~" + sub.'Subscription_Date_Quarter' as 'ActivityDate_Year~~~ActivityDate_Quarter', count() as 'New Quarter Subcribers';
+
+sub = group sub by ('ActivityDate_Year~~~ActivityDate_Quarter');
+sub = foreach sub generate sub.'ActivityDate_Year~~~ActivityDate_Quarter' as 'ActivityDate_Year~~~ActivityDate_Quarter', coalesce(sum(sub.'New Quarter Subcribers'),0) as 'New Quarter Subcribers', coalesce(sum(sum('New Quarter Subcribers')) over ([.. 0] partition by all order by ('ActivityDate_Year~~~ActivityDate_Quarter')),0) as 'Previous Quarter Subcribers';
+
+result = cogroup sub by 'ActivityDate_Year~~~ActivityDate_Quarter' full, cancel by 'ActivityDate_Year~~~ActivityDate_Quarter';
+result = foreach result generate coalesce(sub.'ActivityDate_Year~~~ActivityDate_Quarter', cancel.'ActivityDate_Year~~~ActivityDate_Quarter') as 'ActivityDate_Year~~~ActivityDate_Quarter', sum(cancel.'New Quarter Cancellations')/(sum(sub.'New Quarter Subcribers') + sum(sub.'Previous Quarter Subcribers') - sum(cancel.'Previous Quarter Cancellations')) * 100 as 'Churn Rate';

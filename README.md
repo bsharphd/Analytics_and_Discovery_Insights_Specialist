@@ -8,8 +8,8 @@
   *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/5.-Requirements-Detail-Part-2)
   *   [Solution (SAQL and JSON code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/5.1-Solution-2)
 * Challenge 3
-  *   Instructions
-  *   Solution (SAQL code maintained in private repository)
+  *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/6.-Requirements-Detail-Part-3)
+  *   [Solution (SAQL code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/5.1-Solution-3)
 * Challenge 4
   *   Instructions
   *   Solution (SAQL code maintained in private repository)

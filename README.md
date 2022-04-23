@@ -11,8 +11,8 @@
   *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/6.-Requirements-Detail-Part-3)
   *   [Solution (SAQL code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/6.1-Solution-3)
 * Challenge 4
-  *   Instructions
-  *   Solution (SAQL code maintained in private repository)
+  *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/7.-Requirement-Detail-Part-4)
+  *   [Solution (SAQL code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/7.1-Solution-4)
 * Challenge 5
   *   Instructions
   *   Solution (SAQL code maintained in private repository)

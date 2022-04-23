@@ -14,7 +14,7 @@
   *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/7.-Requirement-Detail-Part-4)
   *   [Solution (SAQL code maintained in private repository)](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/7.1-Solution-4)
 * Challenge 5
-  *   Instructions
+  *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/8.-Requirement-Detail-Part-5)
   *   Solution (SAQL code maintained in private repository)
 * Challenge 6
   *   Instructions

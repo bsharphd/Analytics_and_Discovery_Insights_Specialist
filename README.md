@@ -16,8 +16,3 @@
 * Challenge 5
   *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/8.-Requirement-Detail-Part-5)
   *   [Solution](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/8.1-Solution-5)
-
-
-* Challenge 6
-  *   Instructions
-  *   Solution (SAQL code maintained in private repository)

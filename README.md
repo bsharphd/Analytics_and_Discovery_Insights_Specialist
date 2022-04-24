@@ -1,5 +1,6 @@
 # Analytics-and-Discovery-Insights-Specialist
 ## SuperBadge: Einstein Analytics and Discovery Insights Specialist
+Deliver a solution to reduce subscriber attrition with Tableau CRM and Einstein Discovery.
 
 * Challenge 1
   *   [Instructions](https://github.com/bsharphd/Analytics_and_Discovery_Insights_Specialist/wiki/4.-Requirements-Detail-Part-1)
